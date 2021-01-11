@@ -18,7 +18,7 @@ public class Launch {
         do {
             entry = new Scanner(System.in);
             choice = entry.nextLine().charAt(0);
-        } while (entry.nextLine().charAt(0) !='x' && entry.nextLine().charAt(0) != 'o');
+        } while (choice !='x' && entry.nextLine().charAt(0) != 'o');
         player1.setContent(choice);
         game.setCurrentPlayer(player1);
         if (choice == 'x')
